@@ -1,0 +1,46 @@
+@import "../styles/main.scss";
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background: $white;
+  height: 60px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  h1 {
+    margin-left: 25px;
+  }
+  .header-search {
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+    background: $gray1;
+    border-radius: 5px;
+    padding: 5px;
+    input {
+      width: 100%;
+      border: none;
+      outline: none;
+      background: none;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .header {
+    flex-direction: column;
+    height: inherit;
+    align-items: center;
+    padding-bottom: 10px;
+    h1 {
+      margin: 0;
+    }
+    .header-search {
+      margin: 0;
+      width: 60%;
+    }
+  }
+}

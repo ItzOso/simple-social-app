@@ -1,0 +1,33 @@
+@import "../styles/main.scss";
+
+.post {
+  width: 500px;
+  height: inherit;
+  background: $white;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  margin-top: 15px;
+  .post-top {
+    display: flex;
+    .post-stat {
+        margin-left: 10px;
+        width: 100%;
+        h5 {
+            color: $gray2;
+        }
+    }
+  }
+  p {
+      margin-top: 10px;
+  }
+  .post-delete {
+    color: $red;
+  }
+}
+
+@media (max-width: 576px) {
+  .post {
+    width: 90%;
+  }
+}
